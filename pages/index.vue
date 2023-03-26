@@ -17,6 +17,25 @@ useHead({
     },
   ],
 });
+
+var blogposts=null;
+
+ await useFetch(
+  'http://localhost:3000/api/blogposts?page=1&limit=3'
+).then((res) => {
+      console.log(res.data.value.data)
+        blogposts = res.data.value.data.map((v) => {
+          let pic = v.pic
+
+          if (pic) {
+            v.pic = "http://localhost:3000/" + pic.replace('public/', '')
+          }
+
+          return v
+        })
+      })
+
+
 // const logos = [
 //   { id: 1, link: "assets/img/clients/client-1.png", active: "active" },
 //   { id: 2, link: "/assets/img/clients/client-2.png" },
@@ -77,7 +96,7 @@ useHead({
         <div
           class="col-12 col-lg-7 banner-right-image d-flex justify-content-end"
         >
-          <img src="assets/img/banner/Group 2042.png " alt=" " />
+          <img :src="`_nuxt/assets/img/banner/Group 2042.png` " alt=" " />
         </div>
       </div>
       <div class="row" id="banner-amount">
@@ -162,7 +181,7 @@ useHead({
             >
               <div class="row">
                 <div class="col-12 col-md-7 sl-left-image">
-                  <img src="assets/img/giaiphap/uy-thac-dau-tu.png" alt="" />
+                  :src="`_nuxt/assets/img/giaiphap/uy-thac-dau-tu.png`" alt="" />
                 </div>
                 <div class="col-12 col-md-5 sl-right-content">
                   <h3 class="sl-item-title text-left">Ủy thác đầu tư</h3>
@@ -173,7 +192,7 @@ useHead({
                   </p>
                   <a href="#" class="sl-item-link mt-2"
                     >Xem chi tiết &nbsp;&nbsp;&nbsp;<img
-                      src="assets/img/icons/Vector.svg"
+                      :src="`_nuxt/assets/img/icons/Vector.svg`"
                       alt=""
                   /></a>
                 </div>
@@ -182,7 +201,7 @@ useHead({
             <div class="tab-pane container fade sl-element" id="dau-tu">
               <div class="row">
                 <div class="col-12 col-md-7 sl-left-image">
-                  <img src="assets/img/giaiphap/uy-thac-dau-tu.png" alt="" />
+                  <img :src="`_nuxt/assets/img/giaiphap/uy-thac-dau-tu.png`" alt="" />
                 </div>
                 <div class="col-12 col-md-5 sl-right-content">
                   <h3 class="sl-item-title text-left">Đầu tư</h3>
@@ -193,7 +212,7 @@ useHead({
                   </p>
                   <a href="#" class="sl-item-link mt-2"
                     >Xem chi tiết &nbsp;&nbsp;&nbsp;<img
-                      src="assets/img/icons/Vector.svg"
+                      :src="`_nuxt/assets/img/icons/Vector.svg`"
                       alt=""
                   /></a>
                 </div>
@@ -202,7 +221,7 @@ useHead({
             <div class="tab-pane container fade sl-element" id="bao-cao-tu-van">
               <div class="row">
                 <div class="col-12 col-md-7 sl-left-image">
-                  <img src="assets/img/giaiphap/uy-thac-dau-tu.png" alt="" />
+                  <img :src="`_nuxt/assets/img/giaiphap/uy-thac-dau-tu.png`" alt="" />
                 </div>
                 <div class="col-12 col-md-5 sl-right-content">
                   <h3 class="sl-item-title text-left">Báo cáo & tư vấn</h3>
@@ -213,7 +232,7 @@ useHead({
                   </p>
                   <a href="#" class="sl-item-link mt-2"
                     >Xem chi tiết &nbsp;&nbsp;&nbsp;<img
-                      src="assets/img/icons/Vector.svg"
+                      :src="`_nuxt/assets/img/icons/Vector.svg`"
                       alt=""
                   /></a>
                 </div>
@@ -222,7 +241,7 @@ useHead({
             <div class="tab-pane container fade sl-element" id="dau-tu-bds">
               <div class="row">
                 <div class="col-12 col-md-7 sl-left-image">
-                  <img src="assets/img/giaiphap/uy-thac-dau-tu.png" alt="" />
+                  <img :src="`_nuxt/assets/img/giaiphap/uy-thac-dau-tu.png`" alt="" />
                 </div>
                 <div class="col-12 col-md-5 sl-right-content">
                   <h3 class="sl-item-title text-left">Hợp tác đầu tư BĐS</h3>
@@ -233,7 +252,7 @@ useHead({
                   </p>
                   <a href="#" class="sl-item-link mt-2"
                     >Xem chi tiết &nbsp;&nbsp;&nbsp;<img
-                      src="assets/img/icons/Vector.svg"
+                      :src="`_nuxt/assets/img/icons/Vector.svg`"
                       alt=""
                   /></a>
                 </div>
@@ -245,7 +264,7 @@ useHead({
             >
               <div class="row">
                 <div class="col-12 col-md-7 sl-left-image">
-                  <img src="assets/img/giaiphap/uy-thac-dau-tu.png" alt="" />
+                  <img :src="`_nuxt/assets/img/giaiphap/uy-thac-dau-tu.png`" alt="" />
                 </div>
                 <div class="col-12 col-md-5 sl-right-content">
                   <h3 class="sl-item-title text-left">Giải pháp tài chính</h3>
@@ -256,7 +275,7 @@ useHead({
                   </p>
                   <a href="#" class="sl-item-link mt-2"
                     >Xem chi tiết &nbsp;&nbsp;&nbsp;<img
-                      src="assets/img/icons/Vector.svg"
+                      :src="`_nuxt/assets/img/icons/Vector.svg`"
                       alt=""
                   /></a>
                 </div>
@@ -281,7 +300,7 @@ useHead({
             </p>
             <a href="#" class="ip-item-link mt-2"
               >Xem chi tiết &nbsp;&nbsp;&nbsp;<img
-                src="assets/img/icons/Vector.svg"
+                :src="`_nuxt/assets/img/icons/Vector.svg`"
                 alt=""
             /></a>
             <h4 class="mt-10" id="loi-suat">
@@ -290,7 +309,7 @@ useHead({
             </h4>
           </div>
           <div class="col-12 col-md-7 pe-0" id="ip-right-image">
-            <img src="assets/img/banner/Group 2041.png" alt="" />
+            <img :src="`_nuxt/assets/img/banner/Group 2041.png`" alt="" />
           </div>
         </div>
       </div>
@@ -369,31 +388,32 @@ useHead({
           <div class="tab-content mt-5">
             <div class="tab-pane container sl-element active" id="blog-all">
               <div class="row">
-                <div class="col-lg-4" data-aos="fade-up " data-aos-delay="200 ">
+                <div v-for="post in blogposts" :key="post.id" class="col-lg-4" data-aos="fade-up " data-aos-delay="200 ">
                   <div class="post-box">
                     <div class="post-img">
                       <img
-                        src="assets/img/blog/blog1.png"
+                        :src="post.pic"
                         class="img-fluid"
-                        alt=" "
+                        :alt="post.pic"
                       />
                     </div>
 
                     <h3 class="post-title">
-                      Lỗ kép là gì? Tác hại và lợi ích của lỗ kép
+                      {{post.name}}
                     </h3>
                     <p>1 phút trước</p>
+                    <p>{{post.intro}}</p>
                     <a href="blog-details.html " class="readmore stretched-link"
                       ><span>Read More</span><i class="bi bi-arrow-right"></i
                     ></a>
                   </div>
                 </div>
 
-                <div class="col-lg-4" data-aos="fade-up " data-aos-delay="400 ">
+                <!-- <div class="col-lg-4" data-aos="fade-up " data-aos-delay="400 ">
                   <div class="post-box">
                     <div class="post-img">
                       <img
-                        src="assets/img/blog/blog2.png"
+                        :src="`_nuxt/assets/img/blog/blog2.png`"
                         class="img-fluid"
                         alt=" "
                       />
@@ -412,7 +432,7 @@ useHead({
                   <div class="post-box">
                     <div class="post-img">
                       <img
-                        src="assets/img/blog/blog3.png"
+                        :src="`_nuxt/assets/img/blog/blog3.png`"
                         class="img-fluid"
                         alt=" "
                       />
@@ -426,7 +446,7 @@ useHead({
                       ><span>Read More</span><i class="bi bi-arrow-right"></i
                     ></a>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>

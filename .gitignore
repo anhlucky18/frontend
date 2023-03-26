@@ -1,0 +1,9 @@
+# Nuxt dev/build outputs
+.output
+.nuxt
+.history
+# Node dependencies
+node_modules
+# System files
+*.log
+yarn.lock

@@ -7,7 +7,7 @@
             <div class="testimonial-item row">
               <div class="col-3 ttm-right-img">
                 <img
-                  src="assets/img/testimonials/testimonials1.png "
+                  :src="`_nuxt/assets/img/testimonials/testimonials1.png`"
                   class="testimonial-img"
                   alt=" "
                 />

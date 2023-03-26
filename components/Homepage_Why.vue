@@ -17,7 +17,7 @@
           <div class="col-12 col-md-5 wc-content-right">
             <div class="row">
               <div class="col-6 wc-ct-top">
-                <img src="assets/img/icons/Group1.svg" alt="" class="mb-2" />
+                <img :src="`_nuxt/assets/img/icons/Group1.svg`" alt="" class="mb-2" />
                 <p>
                   Tăng trưởng <br />
                   IU Value vượt <br />
@@ -25,7 +25,7 @@
                 </p>
               </div>
               <div class="col-6 wc-ct-top">
-                <img src="assets/img/icons/Group2.svg" alt="" class="mb-2" />
+                <img :src="`_nuxt/assets/img/icons/Group2.svg`" alt="" class="mb-2" />
                 <p>
                   Lựa chọn <br />
                   danh mục đầu tư <br />
@@ -35,14 +35,14 @@
             </div>
             <div class="row mt-5">
               <div class="col-6 wc-ct-bot">
-                <img src="assets/img/icons/Group3.svg" alt="" class="mb-2" />
+                <img :src="`_nuxt/assets/img/icons/Group3.svg`" alt="" class="mb-2" />
                 <p>
                   Quản trị rủi ro <br />danh mục tốt trong <br />
                   thời kỳ khó khăn
                 </p>
               </div>
               <div class="col-6 wc-ct-bot">
-                <img src="assets/img/icons/surface1.svg" alt="" class="mb-2" />
+                <img :src="`_nuxt/assets/img/icons/surface1.svg`" alt="" class="mb-2" />
                 <p>
                   Đội ngũ quản lý <br />
                   kinh nghiệm, nhiệt <br />

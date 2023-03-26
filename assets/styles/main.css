@@ -771,7 +771,7 @@ h4#loi-suat {
 
 #ip-left-content::after {
     content: "";
-    background: url(assets/img/icons/Arrow.svg) no-repeat;
+    background: url(_nuxt/assets/img/icons/Arrow.svg) no-repeat;
     position: absolute;
     width: 80px;
     height: 40px;
