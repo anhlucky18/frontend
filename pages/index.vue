@@ -17,18 +17,20 @@ useHead({
     },
   ],
 });
-
+const runtimeConfig = useRuntimeConfig();
+console.log(runtimeConfig.server)
 var blogposts=null;
-
+const appConfig = useAppConfig()
+const url = appConfig.http;
  await useFetch(
-  'http://localhost:3000/api/blogposts?page=1&limit=3'
+  url+'api/blogposts?page=1&limit=3'
 ).then((res) => {
       console.log(res.data.value.data)
         blogposts = res.data.value.data.map((v) => {
           let pic = v.pic
 
           if (pic) {
-            v.pic = "http://localhost:3000/" + pic.replace('public/', '')
+            v.pic = url + pic.replace('public/', '')
           }
 
           return v
