@@ -1,4 +1,31 @@
+<script setup lang="ts">
+const appConfig = useAppConfig()
+const url = appConfig.client;
+</script>
+
+
 <template>
+<!-- ======= Growing Enterprises Section ======= -->
+        <section class="grow-enterprises" id="grow-enterprises">
+            <div class="container" data-aos="fade-up ">
+                <div class="row">
+                    <div class="col-12 col-lg-8 ge-content-left d-flex flex-grow-1 justify-content-center align-items-center">
+                        <div style="display: block;">
+                            <h2>
+                                The Global Cloud Contact Center & PBX for Growing Enterprises
+                            </h2>
+                            <a href="#"><button>Trò chuyện miễn phí</button></a>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-lg-4 ge-image-left">
+                        <img :src="`${url}/assets/img/Group 2022.png`" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- ======= End Growing Enterprises Section ======= -->
   <footer id="footer " class="footer ">
 
         <div class="footer-content ">
@@ -39,10 +66,10 @@
                     </div>
                     <div class="col-lg-2 col-md-6 footer-socials">
                         <div class="social-links order-first order-lg-last mb-3 mb-lg-0 ">
-                            <a href="# " class="facebook "><img src="_nuxt/assets/img/icons/icon-fb.svg" alt=""></a>
-                            <a href="# " class="twitter "><img src="_nuxt/assets/img/icons/icons-twitter.svg" alt=""></a>
-                            <a href="# " class="linkedin "><img src="_nuxt/assets/img/icons/icons-linkin.svg" alt=""></a>
-                            <a href="# " class="instagram "><img src="_nuxt/assets/img/icons/icons-insta.svg" alt=""></a>
+                            <a href="# " class="facebook "><img :src="`${url}/assets/img/icons/icon-fb.svg`" alt=""></a>
+                            <a href="# " class="twitter "><img :src="`${url}/assets/img/icons/icons-twitter.svg`" alt=""></a>
+                            <a href="# " class="linkedin "><img :src="`${url}/assets/img/icons/icons-linkin.svg`" alt=""></a>
+                            <a href="# " class="instagram "><img :src="`${url}/assets/img/icons/icons-insta.svg`" alt=""></a>
                         </div>
                     </div>
                 </div>

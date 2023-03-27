@@ -374,6 +374,13 @@ section {
         transition: 0.3s;
         position: relative;
     }
+    #header2 .navbar a,#header2 h1{
+        color: #1D194C;
+    }
+    #header2{
+        box-shadow: 0px 4px 8px #EFEFEF;
+        background-color: white;
+    }
     .navbar a i,
     .navbar a:focus i {
         font-size: 12px;

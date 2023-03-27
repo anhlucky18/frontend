@@ -1,6 +1,7 @@
 <template>
   <div>
-    Some *Blog* layout
+    <AppHeader2 />
     <slot />
+    <AppFooter />
   </div>
 </template>

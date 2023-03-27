@@ -1,5 +1,5 @@
 <template>
-  <header id="header" class="header fixed-top" data-scrollto-offset="0" style="background-color:#25004C">
+  <header id="header2" class="header fixed-top" data-scrollto-offset="0">
     <div class="container d-flex align-items-center justify-content-between">
       <a
         href="index.html"

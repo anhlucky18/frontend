@@ -2,7 +2,7 @@
   <Carousel :settings="settings" :breakpoints="breakpoints">
     <Slide v-for="slide in 8" :key="slide">
       
-      <div class="swiper-slide "><img :src="`assets/img/clients/client-${ slide }.png` " class="img-fluid " alt=" "></div>
+      <div class="swiper-slide"><img :src="`assets/img/clients/client-${ slide }.png` " class="img-fluid " alt=" "></div>
     </Slide>
 
   </Carousel>

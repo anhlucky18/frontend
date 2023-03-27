@@ -6,5 +6,6 @@ export default defineAppConfig({
         primary: '#ff0000'
       }
     },
-    http:'http://27.0.15.58:3000/',
+    http:'http://localhost:3000/',
+    client:'http://localhost:3001',
   })

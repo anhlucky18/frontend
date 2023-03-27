@@ -385,6 +385,7 @@ const url = appConfig.http;
               <div class="row">
                 <div v-for="post in blogposts" :key="post.id" class="col-lg-4" data-aos="fade-up " data-aos-delay="200 ">
                   <div class="post-box">
+                    <NuxtLink :to="`/blogpost/${post.slug}`">
                     <div class="post-img">
                       <img
                         :src="post.pic"
@@ -397,7 +398,7 @@ const url = appConfig.http;
                       {{post.name}}
                     </h3>
                     <p>1 phút trước</p>
-                    
+                    </NuxtLink>
                   </div>
                 </div>
 
@@ -408,27 +409,7 @@ const url = appConfig.http;
       </div>
     </section>
     <!-- End Recent Blog Posts Section -->
-    <!-- ======= Growing Enterprises Section ======= -->
-        <section class="grow-enterprises" id="grow-enterprises">
-            <div class="container" data-aos="fade-up ">
-                <div class="row">
-                    <div class="col-12 col-lg-8 ge-content-left d-flex flex-grow-1 justify-content-center align-items-center">
-                        <div style="display: block;">
-                            <h2>
-                                The Global Cloud Contact Center & PBX for Growing Enterprises
-                            </h2>
-                            <a href="#"><button>Trò chuyện miễn phí</button></a>
-                        </div>
-
-                    </div>
-                    <div class="col-12 col-lg-4 ge-image-left">
-                        <img :src="`_nuxt/assets/img/Group 2022.png`" alt="">
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <!-- ======= End Growing Enterprises Section ======= -->
+    
 
   </main>
 </template>
