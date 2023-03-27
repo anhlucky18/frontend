@@ -934,7 +934,11 @@ ul#blog-block {
 li.nav-item {
     display: inline-block !important;
     width: 250px;
-    margin-right: 20px;
+    
+}
+
+.recent-blog-posts  li.nav-item {
+margin-right: 20px;
 }
 
 .tab-link-blog .tab-content {

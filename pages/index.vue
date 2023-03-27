@@ -330,11 +330,8 @@ const url = appConfig.http;
 
     <!-- ======= Clients Section ======= -->
     
-     <div id="clients " class="clients ">
-         <div class="container " data-aos="zoom-out ">
-         <Carousel_component/>
-         </div>
-            <!-- <div class="container " data-aos="zoom-out ">
+     <section id="clients " class="clients ">
+            <div class="container " data-aos="zoom-out ">
 
                 <div class="clients-slider swiper ">
                     <div class="swiper-wrapper align-items-center ">
@@ -349,8 +346,8 @@ const url = appConfig.http;
                     </div>
                 </div>
 
-            </div> -->
-        </div> 
+            </div>
+        </section>
     <!-- End Clients Section -->
 
     <!-- ======= Recent Blog Posts Section ======= -->
