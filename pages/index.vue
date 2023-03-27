@@ -18,14 +18,12 @@ useHead({
   ],
 });
 const runtimeConfig = useRuntimeConfig();
-console.log(runtimeConfig.server)
 var blogposts=null;
 const appConfig = useAppConfig()
 const url = appConfig.http;
  await useFetch(
   url+'api/blogposts?page=1&limit=3'
 ).then((res) => {
-      console.log(res.data.value.data)
         blogposts = res.data.value.data.map((v) => {
           let pic = v.pic
 
@@ -404,10 +402,7 @@ const url = appConfig.http;
                       {{post.name}}
                     </h3>
                     <p>1 phút trước</p>
-                    <p>{{post.intro}}</p>
-                    <a href="blog-details.html " class="readmore stretched-link"
-                      ><span>Read More</span><i class="bi bi-arrow-right"></i
-                    ></a>
+                    
                   </div>
                 </div>
 
@@ -456,6 +451,28 @@ const url = appConfig.http;
       </div>
     </section>
     <!-- End Recent Blog Posts Section -->
+    <!-- ======= Growing Enterprises Section ======= -->
+        <section class="grow-enterprises" id="grow-enterprises">
+            <div class="container" data-aos="fade-up ">
+                <div class="row">
+                    <div class="col-12 col-lg-8 ge-content-left d-flex flex-grow-1 justify-content-center align-items-center">
+                        <div style="display: block;">
+                            <h2>
+                                The Global Cloud Contact Center & PBX for Growing Enterprises
+                            </h2>
+                            <a href="#"><button>Trò chuyện miễn phí</button></a>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-lg-4 ge-image-left">
+                        <img src="_nuxt/assets/img/Group 2022.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- ======= End Growing Enterprises Section ======= -->
+
   </main>
 </template>
     
