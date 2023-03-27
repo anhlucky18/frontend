@@ -62,6 +62,32 @@ body {
 .mb-10 {
     margin-bottom: 5rem !important;
 }
+
+.header.sticked {
+    background: #1D194C !important;
+}
+
+#main-menu ul li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.ami-nav-menu::after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    top: 90%;
+    background: transparent;
+    transition: all 0.3s;
+}
+
+.ami-nav-menu:hover::after,
+.ami-nav-menu.active::after {
+    width: 70%;
+    background: #1896CF;
+}
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -149,6 +175,12 @@ section {
 .section-header p {
     margin: 0 auto;
     color: var(--color-secondary-light);
+}
+
+#header-other .navbar a,
+#header-other .navbar a:focus,
+#header-other .logo h1 {
+    color: #303A42;
 }
 
 @media (min-width: 1280px) {
@@ -564,6 +596,15 @@ section {
 # Animated banner Section
 --------------------------------------------------------------*/
 
+main#services {
+    overflow: hidden;
+}
+
+#sv-banner {
+    padding: 20px 0 0 0;
+    overflow: hidden;
+}
+
 .hero-animated {
     width: 100%;
     background: #25004C;
@@ -571,7 +612,36 @@ section {
     height: auto;
 }
 
-#ami-banner h1 {
+#sv-banner .bn-content-left {
+    padding: 10% 0;
+}
+
+#sv-banner::before {
+    content: "";
+    background: url("../img/ab-sv.svg") no-repeat;
+    position: absolute;
+    top: 10%;
+    /* left: 10%; */
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+#sv-banner::after {
+    content: "";
+    background: url("../img/ab-sv-bot.svg") no-repeat;
+    position: absolute;
+    position: absolute;
+    bottom: 22%;
+    left: 90%;
+    z-index: 1;
+    width: 10%;
+    height: 30%;
+    display: block;
+}
+
+#ami-banner h1,
+#sv-banner h1 {
     font-family: "Barlow";
     font-style: normal;
     font-weight: 800;
@@ -580,6 +650,7 @@ section {
     color: #FFFFFF;
 }
 
+#sv-banner p,
 #ami-banner p {
     font-family: 'Noto Sans';
     font-style: normal;
@@ -590,6 +661,10 @@ section {
     margin-top: 3rem;
 }
 
+.faq-direct-mail a button,
+.bot-right-button a button,
+#sv-banner a button,
+#grow-enterprises a button,
 #ami-banner a button {
     display: flex;
     flex-direction: row;
@@ -604,7 +679,8 @@ section {
     margin-top: 2rem;
 }
 
-#ami-banner h1>span {
+#ami-banner h1>span,
+#sv-banner h1>span {
     color: #0FDBAD;
 }
 
@@ -654,8 +730,12 @@ span.banner-content-block {
     line-height: 25px;
     color: #1D194C;
 }
+
+#sv-banner {
+    background: #1D194C;
+}
 /*--------------------------------------------------------------
-# Solutions Section
+# Solutions Section + muc tieu
 --------------------------------------------------------------*/
 
 .btn-top-signup {
@@ -734,6 +814,19 @@ span.banner-content-block {
     line-height: 25px;
     color: #1896CF;
 }
+
+.sv-img-left img {
+    margin-left: -100%;
+}
+
+.sv-mt-top,
+.sv-mt-bot {
+    padding: 8% 10%;
+    box-shadow: 0px 4px 8px #EFEFEF;
+    border-radius: 20px;
+    width: 48%;
+    margin-left: 2%;
+}
 /*--------------------------------------------------------------
 # Invest Performance Section
 --------------------------------------------------------------*/
@@ -771,7 +864,7 @@ h4#loi-suat {
 
 #ip-left-content::after {
     content: "";
-    background: url(_nuxt/assets/img/icons/Arrow.svg) no-repeat;
+    background: url('assets/img/icons/Arrow.svg') no-repeat;
     position: absolute;
     width: 80px;
     height: 40px;
@@ -805,6 +898,320 @@ span.wc-decoration::after {
 [data-aos^=zoom][data-aos^=zoom],
 [data-aos^=fade][data-aos^=fade] {
     opacity: 1 !important;
+}
+/*--------------------------------------------------------------
+# Blog Section + How we work
+--------------------------------------------------------------*/
+
+.tab-link-blog,
+.tab-link-blog #blog-block {
+    text-align: center;
+}
+
+.tab-link-blog .nav-link {
+    /* width: 50% !important; */
+    box-shadow: 0px 4px 8px #EFEFEF;
+    border-radius: 20px;
+    background: #ffffff !important;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #444444;
+    padding: 20px;
+}
+
+.tab-link-blog .nav-link.active {
+    color: #0FDBAD !important;
+}
+
+ul#blog-block {
+    display: inline-block;
+    padding: 0;
+}
+
+li.nav-item {
+    display: inline-block !important;
+    width: 250px;
+    margin-right: 20px;
+}
+
+.tab-link-blog .tab-content {
+    text-align: left;
+}
+
+.how-we-work .section-header p {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    /* Ami Invest 04 */
+    color: #444444;
+    text-align: justify;
+    padding: 20px;
+}
+
+.how-we-work .section-bottom {
+    text-align: center;
+}
+
+.how-we-work .section-bottom a#open-modal {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+    text-decoration-line: underline;
+    /* Ami invest 02 */
+    color: #1896CF;
+}
+
+.how-we-work .section-bottom button {
+    background: none;
+    border: none;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+    text-decoration-line: underline;
+    /* Ami invest 02 */
+    color: #1896CF;
+}
+
+.hww-box {
+    text-align: center;
+    border: 1px solid #CFCFCF;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.hww-title {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 154.5%;
+    /* identical to box height, or 37px */
+    text-align: center;
+    /* Ami Invest 04 */
+    color: #444444;
+    padding: 15px;
+}
+
+.hww-text.short {
+    margin-bottom: 2rem;
+}
+
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: -100px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* background: rgba(0, 0, 0, 0.1); */
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+}
+
+.modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalDialog>div {
+    width: auto;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    /* background: -moz-linear-gradient(#2edbe8, #01a6b2);
+    background: -webkit-linear-gradient(#2edbe8, #01a6b2);
+    background: -o-linear-gradient(#2edbe8, #01a6b2); */
+}
+
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover {
+    background: #6ed1d8;
+}
+
+.swiper-container {
+    /* width: 90vw;
+    height: 100vh; */
+    width: auto;
+    height: auto;
+    /*     background: #fd5; */
+}
+
+.swiper-slide img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.swiper-button-prev.hww-prev {
+    left: 5% !important;
+}
+
+.swiper-button-prev.hww-next {
+    right: 5% !important;
+}
+
+a.close.hww-btn-close {
+    right: 10%;
+    background: red;
+    width: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    top: -40px;
+}
+/*--------------------------------------------------------------
+# Grow Enterprises Section + main product
+--------------------------------------------------------------*/
+
+#main-product .mp-wrap {
+    background: #EBF1F7;
+    border-radius: 20px;
+    padding-top: 5rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#grow-enterprises {
+    background: #1D194C;
+    height: auto;
+    padding: 0px;
+    /* padding: 100px 0px; */
+}
+
+#grow-enterprises h2 {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.mp-content-left {
+    padding: 1% 5%;
+}
+
+.mp-content-left h4 {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 154.5%;
+    /* identical to box height, or 37px */
+    /* Ami invest 02 */
+    color: #1896CF;
+}
+
+.mp-content-left p {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+    /* Ami Invest 04 */
+    color: #444444;
+}
+
+.mp-content-left .row {
+    background: #FDFDFF;
+    /* Ami invest 07 */
+    border: 1px solid #F9C729;
+    border-radius: 20px;
+    padding: 15px;
+    /* width: 80%; */
+    margin-top: 2rem;
+}
+
+.mp-content-left .row img {
+    margin-top: 1rem;
+}
+
+.mp-content-left .row#amisharing {
+    border: 1px solid #0FDBAD;
+}
+
+.mp-note {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    text-align: center !important;
+    /* Ami Invest 04 */
+    color: #444444;
+}
+
+.mp-section-bottom {
+    background: #1D194C;
+    border-radius: 0px 0px 20px 20px;
+    padding: 50px 30px;
+}
+
+.bot-left-content {
+    padding: 5%;
+    text-align: justify;
+}
+
+.bot-right-button {
+    padding: 6%;
+}
+
+.bot-left-content h4 {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 154.5%;
+    /* identical to box height, or 37px */
+    color: #F5F5F5;
+}
+
+.bot-left-content p {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #F5F5F5;
 }
 /*--------------------------------------------------------------
 # Carousel Hero Section
@@ -1363,7 +1770,7 @@ span.wc-decoration::after {
 --------------------------------------------------------------*/
 
 .clients {
-    padding: 0 0 60px 0;
+    padding: 0px !important;
 }
 
 .clients .swiper-slide img {
@@ -1868,20 +2275,16 @@ span.wc-decoration::after {
 .swiper-button-next,
 .swiper-button-prev {
     top: 57% !important;
-    /* right: 5% !important; */
+    right: 5% !important;
 }
-.swiper-button-next{
-    right: 62% !important ;
-}
-.carousel-control-prev {
-    left: 72% !important
-}
+
 .swiper-button-prev {
     left: 85% !important;
 }
-
+#testimonials{
+    padding:0px !important;
+}
 .testimonials {
-    padding: 80px 0;
     /* background: url("../img/testimonials-bg.jpg") no-repeat;
     background-position: center center;
     background-size: cover; */
@@ -2107,6 +2510,81 @@ span.wc-decoration::after {
 /*--------------------------------------------------------------
 # F.A.Q Section
 --------------------------------------------------------------*/
+
+.accordion-button::after {
+    background-image: url('../img/icons/accord1.svg') !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url('../img/icons/accord2.svg') !important;
+}
+
+.accordion-item,
+.faq-direct-mail {
+    background: #FFFFFF !important;
+    box-shadow: 0px 4px 8px #EFEFEF !important;
+    border-radius: 10px !important;
+}
+
+h3.accordion-header {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 154.5%;
+    /* identical to box height, or 37px */
+    /* Ami Invest 04 */
+    color: #444444;
+}
+
+.accordion-body {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    /* Ami Invest 04 */
+    color: #444444;
+}
+
+.faq-direct-mail {
+    text-align: center;
+    padding: 2%;
+    position: relative;
+}
+
+.faq-direct-mail a button {
+    margin: 0 auto;
+    /* position: relative; */
+    margin-top: 5rem;
+    padding: 20px 90px;
+    left: 13%;
+    bottom: 10%;
+}
+
+.faq-direct-mail h3 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 22px;
+    /* identical to box height, or 100% */
+    /* Ami invest 01 */
+    color: #1D194C;
+}
+
+.faq-direct-mail p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 31px;
+    /* or 194% */
+    text-align: center;
+    letter-spacing: -0.02em;
+    /* Ami Invest 04 */
+    color: #444444;
+}
 
 @media (max-width: 991px) {
     .faq {
@@ -2403,6 +2881,7 @@ span.wc-decoration::after {
     overflow: hidden;
     position: relative;
     border-radius: 10px;
+    height: 275px;
 }
 
 .recent-blog-posts .post-box .post-img img {
@@ -3270,6 +3749,22 @@ span.wc-decoration::after {
 # Footer
 --------------------------------------------------------------*/
 
+#footer-subc input[type=email] {
+    background: #F5F5F5;
+    border-radius: 25px;
+    padding: 10px 30px;
+    width: 100%;
+}
+
+#footer-subc input[type=submit] {
+    background: url('assets/img/icons/btn-send.svg')  no-repeat no-repeat;
+    border: 0;
+    display: block;
+    position: absolute;
+    top: 4px;
+    right: -4px;
+}
+
 .footer {
     color: var(--color-white);
     font-size: 14px;
@@ -3366,7 +3861,7 @@ span.wc-decoration::after {
 .footer .footer-content .footer-newsletter form {
     margin-top: 30px;
     background: var(--color-white);
-    padding: 6px 10px;
+    /* padding: 6px 10px; */
     position: relative;
     border-radius: 4px;
 }
@@ -3433,39 +3928,4 @@ span.wc-decoration::after {
 .footer .footer-legal .social-links a:hover {
     background: var(--color-primary);
     text-decoration: none;
-}
-
-/*       image slider */
-@media (max-width: 767px) {
-    .carousel-inner .carousel-item > div {
-        display: none;
-    }
-    .carousel-inner .carousel-item > div:first-child {
-        display: block;
-    }
-}
-
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-    display: flex;
-}
-
-/* medium and up screens */
-@media (min-width: 768px) {
-    
-    .carousel-inner .carousel-item-end.active,
-    .carousel-inner .carousel-item-next {
-      transform: translateX(25%);
-    }
-    
-    .carousel-inner .carousel-item-start.active, 
-    .carousel-inner .carousel-item-prev {
-      transform: translateX(-25%);
-    }
-}
-
-.carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start { 
-  transform: translateX(0);
 }

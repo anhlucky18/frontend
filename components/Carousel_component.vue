@@ -27,7 +27,7 @@ export default defineComponent({
       itemsToShow: 1,
       snapAlign: 'center',
       wrapAround:true,
-      autoplay:2000
+      autoplay:5000
     },
     // breakpoints are mobile first
     // any settings not specified will fallback to the carousel settings

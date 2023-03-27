@@ -3,7 +3,7 @@ export default defineNuxtConfig({
     routeRules: {
         '/': { ssr: true  },
       },
-    css: ["@/assets/styles/main.css","@/assets/vendor/swiper/swiper-bundle.min.css","@/assets/vendor/aos/aos.css"],
+    css: ["@/assets/styles/main.css","@/assets/vendor/swiper/swiper-bundle.min.css","@/assets/vendor/aos/aos.css","@/assets/vendor/glightbox/css/glightbox.min.css"],
 
     components: {
         dirs: [
@@ -20,7 +20,11 @@ export default defineNuxtConfig({
                 
             ],
             script: [
-                { src:"https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js", integrity:"sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4", crossorigin: 'anonymous' }
+                { src:"https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js", integrity:"sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4", crossorigin: 'anonymous' },
+                { src:'_nuxt/assets/main.js'},
+                { src:'_nuxt/assets/vendor/glightbox/js/glightbox.js'},
+                { src:'_nuxt/assets/vendor/swiper/swiper-bundle.min.js'},
+                { src:'_nuxt/assets/vendor/aos/aos.js'},
             ]
         },
     },

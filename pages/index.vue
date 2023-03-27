@@ -96,7 +96,7 @@ const url = appConfig.http;
         <div
           class="col-12 col-lg-7 banner-right-image d-flex justify-content-end"
         >
-          <img :src="`_nuxt/assets/img/banner/Group 2042.png` " alt=" " />
+          <img :src="`_nuxt/assets/img/banner/Group 2042.png`" alt=" " />
         </div>
       </div>
       <div class="row" id="banner-amount">
@@ -181,7 +181,7 @@ const url = appConfig.http;
             >
               <div class="row">
                 <div class="col-12 col-md-7 sl-left-image">
-                  :src="`_nuxt/assets/img/giaiphap/uy-thac-dau-tu.png`" alt="" />
+                  <img :src="`_nuxt/assets/img/giaiphap/uy-thac-dau-tu.png`" alt="" />
                 </div>
                 <div class="col-12 col-md-5 sl-right-content">
                   <h3 class="sl-item-title text-left">Ủy thác đầu tư</h3>
@@ -322,17 +322,15 @@ const url = appConfig.http;
     <!-- ======= End Why choose ======= -->
 
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
-      <div class="container">
+    
     <Testimonials_slide/>
-      </div>
-      </section>
+    
     <!-- End Testimonials Section -->
 
 
     <!-- ======= Clients Section ======= -->
     
-     <section id="clients " class="clients ">
+     <div id="clients " class="clients ">
          <div class="container " data-aos="zoom-out ">
          <Carousel_component/>
          </div>
@@ -352,7 +350,7 @@ const url = appConfig.http;
                 </div>
 
             </div> -->
-        </section> 
+        </div> 
     <!-- End Clients Section -->
 
     <!-- ======= Recent Blog Posts Section ======= -->
@@ -363,7 +361,7 @@ const url = appConfig.http;
         </div>
         <div class="tab-link-blog">
           <ul
-            class="nav nav-pills nav-fill d-flex justify-content-center align-items-center"
+            class="nav nav-pills nav-fill justify-content-center align-items-center"
             id="blog-block"
           >
             <li class="nav-item">
@@ -406,44 +404,6 @@ const url = appConfig.http;
                   </div>
                 </div>
 
-                <!-- <div class="col-lg-4" data-aos="fade-up " data-aos-delay="400 ">
-                  <div class="post-box">
-                    <div class="post-img">
-                      <img
-                        :src="`_nuxt/assets/img/blog/blog2.png`"
-                        class="img-fluid"
-                        alt=" "
-                      />
-                    </div>
-                    <h3 class="post-title">
-                      Quá trình hình thành bong bóng Dotcom và những...
-                    </h3>
-                    <p>1 phút trước</p>
-                    <a href="blog-details.html " class="readmore stretched-link"
-                      ><span>Read More</span><i class="bi bi-arrow-right"></i
-                    ></a>
-                  </div>
-                </div>
-
-                <div class="col-lg-4" data-aos="fade-up " data-aos-delay="600 ">
-                  <div class="post-box">
-                    <div class="post-img">
-                      <img
-                        :src="`_nuxt/assets/img/blog/blog3.png`"
-                        class="img-fluid"
-                        alt=" "
-                      />
-                    </div>
-
-                    <h3 class="post-title">
-                      Tài chính công là gì? Vai trò, đặc điểm và các phần...
-                    </h3>
-                    <p>1 phút trước</p>
-                    <a href="blog-details.html " class="readmore stretched-link"
-                      ><span>Read More</span><i class="bi bi-arrow-right"></i
-                    ></a>
-                  </div>
-                </div> -->
               </div>
             </div>
           </div>
@@ -465,7 +425,7 @@ const url = appConfig.http;
 
                     </div>
                     <div class="col-12 col-lg-4 ge-image-left">
-                        <img src="_nuxt/assets/img/Group 2022.png" alt="">
+                        <img :src="`_nuxt/assets/img/Group 2022.png`" alt="">
                     </div>
                 </div>
             </div>
