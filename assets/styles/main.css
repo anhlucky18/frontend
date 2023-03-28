@@ -83,7 +83,7 @@ body {
     transition: all 0.3s;
 }
 
-.ami-nav-menu:hover::after,
+/*.ami-nav-menu:hover::after,*/
 .ami-nav-menu.active::after {
     width: 70%;
     background: #1896CF;
@@ -178,7 +178,6 @@ section {
 }
 
 #header-other .navbar a,
-#header-other .navbar a:focus,
 #header-other .logo h1 {
     color: #303A42;
 }
@@ -377,10 +376,6 @@ section {
     #header2 .navbar a,#header2 h1{
         color: #1D194C;
     }
-    #header2{
-        box-shadow: 0px 4px 8px #EFEFEF;
-        background-color: white;
-    }
     .navbar a i,
     .navbar a:focus i {
         font-size: 12px;
@@ -410,17 +405,14 @@ section {
     .navbar .active,
     .navbar .active:focus,
     .navbar li:hover>a {
-        color: #1896CF;
+        color: #ffffff;
     }
     .navbar .dropdown a:hover:before,
     .navbar .dropdown:hover>a:before,
     .navbar .dropdown .active:before {
         visibility: hidden;
     }
-    .navbar .dropdown a:hover,
-    .navbar .dropdown .active,
-    .navbar .dropdown .active:focus,
-    .navbar .dropdown:hover>a {
+    #header .navbar  a:hover{
         color: #1896CF;
         background: var(--color-secondary);
     }
@@ -447,13 +439,21 @@ section {
         font-weight: 400;
         color: #0FDBAD;
     }
+    #header-other .navbar a:hover {
+        color: #1896CF;
+        background: var(--color-secondary);
+    }
+    #header-other .navbar .dropdown ul a {
+        padding: 10px 20px;
+        font-size: 15px;
+        text-transform: none;
+        font-weight: 400;
+        color: #0FDBAD;
+    }
     .navbar .dropdown ul a i {
         font-size: 12px;
     }
-    .navbar .dropdown ul a:hover,
-    .navbar .dropdown ul .active,
-    .navbar .dropdown ul .active:hover,
-    .navbar .dropdown ul li:hover>a {
+    #header-other .navbar .dropdown a:hover {
         color: #1896CF;
         background: var(--color-primary);
     }
@@ -607,6 +607,7 @@ main#services {
     overflow: hidden;
 }
 
+#report-consult-banner,
 #sv-banner {
     padding: 20px 0 0 0;
     overflow: hidden;
@@ -619,34 +620,38 @@ main#services {
     height: auto;
 }
 
+#report-consult-banner .bn-content-left,
 #sv-banner .bn-content-left {
     padding: 10% 0;
 }
 
+#report-consult-banner::before,
 #sv-banner::before {
     content: "";
-    background: url("../img/ab-sv.svg") no-repeat;
+    background: url("assets/img/ab-sv.svg") no-repeat;
     position: absolute;
-    top: 10%;
+    top: -7%;
     /* left: 10%; */
     z-index: 1;
     width: 100%;
     height: 100%;
 }
 
+#report-consult-banner::after,
 #sv-banner::after {
     content: "";
-    background: url("../img/ab-sv-bot.svg") no-repeat;
+    background: url("assets/img/ab-sv-bot.svg") no-repeat;
     position: absolute;
     position: absolute;
-    bottom: 22%;
-    left: 90%;
+    bottom: 0%;
+    left: 91%;
     z-index: 1;
     width: 10%;
     height: 30%;
     display: block;
 }
 
+#report-consult-banner h1,
 #ami-banner h1,
 #sv-banner h1 {
     font-family: "Barlow";
@@ -657,6 +662,7 @@ main#services {
     color: #FFFFFF;
 }
 
+#report-consult-banner p,
 #sv-banner p,
 #ami-banner p {
     font-family: 'Noto Sans';
@@ -668,6 +674,7 @@ main#services {
     margin-top: 3rem;
 }
 
+#report-consult-banner a button,
 .faq-direct-mail a button,
 .bot-right-button a button,
 #sv-banner a button,
@@ -686,6 +693,7 @@ main#services {
     margin-top: 2rem;
 }
 
+#report-consult-banner h1>span,
 #ami-banner h1>span,
 #sv-banner h1>span {
     color: #0FDBAD;
@@ -738,8 +746,10 @@ span.banner-content-block {
     color: #1D194C;
 }
 
+#report-consult-banner,
 #sv-banner {
     background: #1D194C;
+    position: relative;
 }
 /*--------------------------------------------------------------
 # Solutions Section + muc tieu
@@ -941,12 +951,10 @@ ul#blog-block {
 li.nav-item {
     display: inline-block !important;
     width: 250px;
-    
 }
-
 .recent-blog-posts  li.nav-item {
-margin-right: 20px;
-}
+    margin-right: 20px;
+    }
 
 .tab-link-blog .tab-content {
     text-align: left;
@@ -995,6 +1003,20 @@ margin-right: 20px;
     color: #1896CF;
 }
 
+.download-a-lot .section-header {
+    text-align: left;
+}
+
+.download-a-lot .container-wrap {
+    background: #0FDBAD;
+    padding: 20px 0px;
+}
+
+.download-a-lot .new-box {
+    background: #ffffff;
+}
+
+.new-box,
 .hww-box {
     text-align: center;
     border: 1px solid #CFCFCF;
@@ -1002,6 +1024,11 @@ margin-right: 20px;
     padding: 50px;
 }
 
+.new-box {
+    padding: 20px;
+}
+
+.new-title,
 .hww-title {
     font-family: 'Barlow';
     font-style: normal;
@@ -1013,6 +1040,41 @@ margin-right: 20px;
     /* Ami Invest 04 */
     color: #444444;
     padding: 15px;
+}
+
+.new-title,
+.new-text {
+    text-align: left;
+    padding: 0;
+}
+
+.new-text {
+    text-align: justify;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+    /* Ami Invest 04 */
+    color: #444444;
+}
+
+.time-readmore {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.new-space {
+    padding: 0 20px;
+}
+
+.new-dl,
+.new-readmore {
+    color: #1896CF;
 }
 
 .hww-text.short {
@@ -1105,6 +1167,10 @@ a.close.hww-btn-close {
     line-height: 50px;
     font-size: 24px;
     top: -40px;
+}
+
+.newest .section-header {
+    text-align: left;
 }
 /*--------------------------------------------------------------
 # Grow Enterprises Section + main product
@@ -2296,6 +2362,7 @@ a.close.hww-btn-close {
     padding:0px !important;
 }
 .testimonials {
+    padding: 80px 0;
     /* background: url("../img/testimonials-bg.jpg") no-repeat;
     background-position: center center;
     background-size: cover; */
@@ -2523,11 +2590,11 @@ a.close.hww-btn-close {
 --------------------------------------------------------------*/
 
 .accordion-button::after {
-    background-image: url('../img/icons/accord1.svg') !important;
+    background-image: url('assets/img/icons/accord1.svg') !important;
 }
 
 .accordion-button:not(.collapsed)::after {
-    background-image: url('../img/icons/accord2.svg') !important;
+    background-image: url('assets/img/icons/accord2.svg') !important;
 }
 
 .accordion-item,

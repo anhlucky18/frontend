@@ -15,26 +15,24 @@ useHead({
       // valid options are: 'head' | 'bodyClose' | 'bodyOpen'
       tagPosition: "bodyClose",
     },
+    
   ],
 });
 const runtimeConfig = useRuntimeConfig();
-var blogposts=null;
-const appConfig = useAppConfig()
+var blogposts = null;
+const appConfig = useAppConfig();
 const url = appConfig.http;
- await useFetch(
-  url+'api/blogposts?page=1&limit=3'
-).then((res) => {
-        blogposts = res.data.value.data.map((v) => {
-          let pic = v.pic
+await useFetch(url + "api/blogposts?page=1&limit=3").then((res) => {
+  blogposts = res.data.value.data.map((v) => {
+    let pic = v.pic;
 
-          if (pic) {
-            v.pic = url + pic.replace('public/', '')
-          }
+    if (pic) {
+      v.pic = url + pic.replace("public/", "");
+    }
 
-          return v
-        })
-      })
-
+    return v;
+  });
+});
 
 // const logos = [
 //   { id: 1, link: "assets/img/clients/client-1.png", active: "active" },
@@ -68,7 +66,6 @@ const url = appConfig.http;
 </script>
 
 <template>
-
   <section
     id="ami-banner"
     class="hero-animated d-flex align-items-center banner-top"
@@ -181,7 +178,10 @@ const url = appConfig.http;
             >
               <div class="row">
                 <div class="col-12 col-md-7 sl-left-image">
-                  <img :src="`_nuxt/assets/img/giaiphap/uy-thac-dau-tu.png`" alt="" />
+                  <img
+                    :src="`_nuxt/assets/img/giaiphap/uy-thac-dau-tu.png`"
+                    alt=""
+                  />
                 </div>
                 <div class="col-12 col-md-5 sl-right-content">
                   <h3 class="sl-item-title text-left">Ủy thác đầu tư</h3>
@@ -201,7 +201,10 @@ const url = appConfig.http;
             <div class="tab-pane container fade sl-element" id="dau-tu">
               <div class="row">
                 <div class="col-12 col-md-7 sl-left-image">
-                  <img :src="`_nuxt/assets/img/giaiphap/uy-thac-dau-tu.png`" alt="" />
+                  <img
+                    :src="`_nuxt/assets/img/giaiphap/uy-thac-dau-tu.png`"
+                    alt=""
+                  />
                 </div>
                 <div class="col-12 col-md-5 sl-right-content">
                   <h3 class="sl-item-title text-left">Đầu tư</h3>
@@ -221,7 +224,10 @@ const url = appConfig.http;
             <div class="tab-pane container fade sl-element" id="bao-cao-tu-van">
               <div class="row">
                 <div class="col-12 col-md-7 sl-left-image">
-                  <img :src="`_nuxt/assets/img/giaiphap/uy-thac-dau-tu.png`" alt="" />
+                  <img
+                    :src="`_nuxt/assets/img/giaiphap/uy-thac-dau-tu.png`"
+                    alt=""
+                  />
                 </div>
                 <div class="col-12 col-md-5 sl-right-content">
                   <h3 class="sl-item-title text-left">Báo cáo & tư vấn</h3>
@@ -241,7 +247,10 @@ const url = appConfig.http;
             <div class="tab-pane container fade sl-element" id="dau-tu-bds">
               <div class="row">
                 <div class="col-12 col-md-7 sl-left-image">
-                  <img :src="`_nuxt/assets/img/giaiphap/uy-thac-dau-tu.png`" alt="" />
+                  <img
+                    :src="`_nuxt/assets/img/giaiphap/uy-thac-dau-tu.png`"
+                    alt=""
+                  />
                 </div>
                 <div class="col-12 col-md-5 sl-right-content">
                   <h3 class="sl-item-title text-left">Hợp tác đầu tư BĐS</h3>
@@ -264,7 +273,10 @@ const url = appConfig.http;
             >
               <div class="row">
                 <div class="col-12 col-md-7 sl-left-image">
-                  <img :src="`_nuxt/assets/img/giaiphap/uy-thac-dau-tu.png`" alt="" />
+                  <img
+                    :src="`_nuxt/assets/img/giaiphap/uy-thac-dau-tu.png`"
+                    alt=""
+                  />
                 </div>
                 <div class="col-12 col-md-5 sl-right-content">
                   <h3 class="sl-item-title text-left">Giải pháp tài chính</h3>
@@ -317,37 +329,82 @@ const url = appConfig.http;
     <!-- End investment performance -->
 
     <!-- ======= Why choose ======= -->
-    <Homepage_Why/>
+    <Homepage_Why />
 
     <!-- ======= End Why choose ======= -->
 
     <!-- ======= Testimonials Section ======= -->
-    
-    <Testimonials_slide/>
-    
+
+    <Testimonials_slide />
+
     <!-- End Testimonials Section -->
 
-
     <!-- ======= Clients Section ======= -->
-    
-     <section id="clients " class="clients ">
-            <div class="container " data-aos="zoom-out ">
 
-                <div class="clients-slider swiper ">
-                    <div class="swiper-wrapper align-items-center ">
-                        <div class="swiper-slide "><img src="assets/img/clients/client-1.png " class="img-fluid " alt=" "></div>
-                        <div class="swiper-slide "><img src="assets/img/clients/client-2.png " class="img-fluid " alt=" "></div>
-                        <div class="swiper-slide "><img src="assets/img/clients/client-3.png " class="img-fluid " alt=" "></div>
-                        <div class="swiper-slide "><img src="assets/img/clients/client-4.png " class="img-fluid " alt=" "></div>
-                        <div class="swiper-slide "><img src="assets/img/clients/client-5.png " class="img-fluid " alt=" "></div>
-                        <div class="swiper-slide "><img src="assets/img/clients/client-6.png " class="img-fluid " alt=" "></div>
-                        <div class="swiper-slide "><img src="assets/img/clients/client-7.png " class="img-fluid " alt=" "></div>
-                        <div class="swiper-slide "><img src="assets/img/clients/client-8.png " class="img-fluid " alt=" "></div>
-                    </div>
-                </div>
-
+    <section id="clients " class="clients">
+      <div class="container" data-aos="zoom-out ">
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide">
+              <img
+                src="assets/img/clients/client-1.png "
+                class="img-fluid"
+                alt=" "
+              />
             </div>
-        </section>
+            <div class="swiper-slide">
+              <img
+                src="assets/img/clients/client-2.png "
+                class="img-fluid"
+                alt=" "
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="assets/img/clients/client-3.png "
+                class="img-fluid"
+                alt=" "
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="assets/img/clients/client-4.png "
+                class="img-fluid"
+                alt=" "
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="assets/img/clients/client-5.png "
+                class="img-fluid"
+                alt=" "
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="assets/img/clients/client-6.png "
+                class="img-fluid"
+                alt=" "
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="assets/img/clients/client-7.png "
+                class="img-fluid"
+                alt=" "
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="assets/img/clients/client-8.png "
+                class="img-fluid"
+                alt=" "
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- End Clients Section -->
 
     <!-- ======= Recent Blog Posts Section ======= -->
@@ -383,25 +440,30 @@ const url = appConfig.http;
           <div class="tab-content mt-5">
             <div class="tab-pane container sl-element active" id="blog-all">
               <div class="row">
-                <div v-for="post in blogposts" :key="post.id" class="col-lg-4" data-aos="fade-up " data-aos-delay="200 ">
+                <div
+                  v-for="post in blogposts"
+                  :key="post.id"
+                  class="col-lg-4"
+                  data-aos="fade-up "
+                  data-aos-delay="200 "
+                >
                   <div class="post-box">
                     <NuxtLink :to="`/blogpost/${post.slug}`">
-                    <div class="post-img">
-                      <img
-                        :src="post.pic"
-                        class="img-fluid"
-                        :alt="post.pic"
-                      />
-                    </div>
+                      <div class="post-img">
+                        <img
+                          :src="post.pic"
+                          class="img-fluid"
+                          :alt="post.pic"
+                        />
+                      </div>
 
-                    <h3 class="post-title">
-                      {{post.name}}
-                    </h3>
-                    <p>1 phút trước</p>
+                      <h3 class="post-title">
+                        {{ post.name }}
+                      </h3>
+                      <p>1 phút trước</p>
                     </NuxtLink>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
@@ -409,8 +471,6 @@ const url = appConfig.http;
       </div>
     </section>
     <!-- End Recent Blog Posts Section -->
-    
-
   </main>
 </template>
     

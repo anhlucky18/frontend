@@ -1,8 +1,8 @@
 <template>
-  <header id="header2" class="header fixed-top" data-scrollto-offset="0">
+  <header id="header-other" class="header fixed-top" data-scrollto-offset="0" style="background-color:#ffffff">
     <div class="container d-flex align-items-center justify-content-between">
       <a
-        href="index.html"
+        href="/"
         class="logo d-flex align-items-center scrollto me-auto me-lg-0"
       >
         <h1>Ami Invest<span>.</span></h1>
@@ -14,32 +14,27 @@
             <a href="/"><span>Trang Chủ</span> </a>
           </li>
 
-          <li class="dropdown">
-            <a href="#"
-              ><span>Dịch vụ</span>
-              <i class="bi bi-chevron-down dropdown-indicator"></i
-            ></a>
-            <ul>
-              <li><a href="#">Ủy thác đầu tư</a></li>
-              <li><a href="#">Báo cáo và tư vấn</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#"
-              ><span>Về chúng tôi </span>
-              <i class="bi bi-chevron-down dropdown-indicator"></i
-            ></a>
-            <ul>
-              <li><a href="#">Về Ami Invest</a></li>
-              <li><a href="#">Liên hệ</a></li>
-              <li><a href="#">FAQ</a></li>
-
-            </ul>
-          </li>
-          <li><a href="blog.html">Blog</a></li>
+          <li class="dropdown"><a href="/uy-thac" class="ami-nav-menu active"><span>Dịch vụ</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul>
+                            <li>
+                              <NuxtLink :to="`/uy-thac`">
+                              Ủy thác đầu tư
+                              </NuxtLink>
+                            </li>
+                            <li><a href="#">Báo cáo và tư vấn</a></li>
+                        </ul>
+                    </li>
+          <li class="dropdown"><a href="#" class="ami-nav-menu"><span>Về chúng tôi </span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul>
+                            <li><a href="#">Về Ami Invest</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </li>
+          <li><a href="#">Blog</a></li>
           <!-- <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li> -->
           <li>
-            <a class="btn-top-signup scrollto" href="index.html#about"
+            <a class="btn-top-signup scrollto" href="#"
               >Đăng ký</a
             >
           </li>
