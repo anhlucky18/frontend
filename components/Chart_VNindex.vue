@@ -1,18 +1,40 @@
 <template>
-  <div>
-    <apexchart
+  <swiper-container
+    :slides-per-view="1"
+    :space-between="spaceBetween"
+    :centered-slides="true"
+    :pagination="{
+      clickable: true
+    }"
+    @progress="onProgress"
+    @slidechange="onSlideChange"
+  >
+    <swiper-slide><apexchart
       height="350"
       type="line"
       :options="chartOptions"
       :series="series"
       v-if="series"
+    ></apexchart></swiper-slide>
+    <swiper-slide>
+      <apexchart
+      height="350"
+      type="line"
+      :options="chartOptions2"
+      :series="series2"
+      v-if="series"
     ></apexchart>
-  </div>
+    </swiper-slide>
+  </swiper-container>
 </template>
 
 <script>
 import axios from "axios";
 import VueApexCharts from "vue3-apexcharts";
+import { register } from 'swiper/element/bundle';
+// register Swiper custom elements
+register();
+
 const rawdata = [
  {
    "Date": "07/20/21 ",
@@ -4398,6 +4420,23 @@ for(let i=0;i<rawdata.length;i++){
   data_amsindex.push(rawdata[i]['AMS-Index']);
 }
 export default {
+  setup() {
+      const spaceBetween = 10;
+      const onProgress = (e) => {
+        const [swiper, progress] = e.detail;
+        console.log(progress)
+      };
+
+      const onSlideChange = (e) => {
+        console.log('slide changed')
+      }
+
+      return {
+        spaceBetween,
+        onProgress,
+        onSlideChange,
+      };
+    },
   name: "VNindex",
   props: {
     msg: String,
@@ -4455,15 +4494,16 @@ export default {
           enabled: false,
         },
         stroke: {
-          width: [1, 1, 1],
+          width: [2, 1, 1],
           curve: 'straight',
           // dashArray: [0, 8, 5]
         },
         title: {
-          text: "Thay đổi VNINDEX",
-          align: "center",
+          text: "Tương quan AMS và VNINDEX",
+          align: "left",
         },
         legend: {
+          position: 'top',
           tooltipHoverFormatter: function(val, opts) {
             return val + ' - ' + opts.w.globals.series[opts.seriesIndex][opts.dataPointIndex] + ''
           }
@@ -4488,6 +4528,8 @@ export default {
           tickAmount: 19,
         },
         tooltip: {
+          enabled: true,
+          intersect: false,
           y: [
             {
               title: {
@@ -4512,6 +4554,78 @@ export default {
             }
           ]
         },
+      },
+      series2: [{
+            name: "AMS-index",
+            type: 'line',
+            data: data_amsindex
+          },
+        ],
+      chartOptions2: {
+        chart: {
+          height: 350,
+          type: "line",
+          zoom: {
+            enabled: false,
+          },
+          toolbar: {
+            show: false,
+            tools: {
+              download: false,
+              selection: true,
+              zoom: true,
+              zoomin: true,
+              zoomout: true,
+              pan: true,
+              reset: true | '<img src="/static/icons/reset.png" width="20">',
+              customIcons: [],
+            },
+          },
+        },
+        colors:['#4472C4', '#ED7D31', '#A5A5A5'],
+        labels:{
+          rotate: -90,
+          rotateAlways:true,
+          hideOverlappingLabels:true,
+        },
+        dataLabels: {
+          enabled: false,
+        },
+        stroke: {
+          width: [2],
+          curve: 'straight',
+          // dashArray: [0, 8, 5]
+        },
+        title: {
+          text: "Chỉ số AMS",
+          align: "left",
+        },
+        legend: {
+          position: 'top',
+          tooltipHoverFormatter: function(val, opts) {
+            return val + ' - ' + opts.w.globals.series[opts.seriesIndex][opts.dataPointIndex] + ''
+          }
+        },
+        markers: {
+          size: 0,
+          hover: {
+            sizeOffset: 6
+          }
+        },
+        grid: {
+          row: {
+            colors: ["#f4f4f4", "transparent"], // takes an array which will be repeated on columns
+            opacity: 0.5,
+            strokeDashArray: 20
+          },
+        },
+        xaxis: {
+          type:"category",
+          categories: x_axis,
+          tickPlacement: 'on',
+          tickAmount: 19,
+        },
+        
       },
     };
   },
