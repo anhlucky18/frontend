@@ -19,7 +19,7 @@
               <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="/uy-thac" id="uythac">Ủy thác đầu tư</a></li>
-              <li><a href="#">Báo cáo và tư vấn</a></li>
+              <li><a href="/bao-cao-tu-van">Báo cáo và tư vấn</a></li>
             </ul>
           </li>
           <li class="dropdown">

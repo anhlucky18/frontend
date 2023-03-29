@@ -2349,13 +2349,13 @@ a.close.hww-btn-close {
     position: relative;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
+#testimonials .swiper-button-next,
+#testimonials .swiper-button-prev {
     top: 57% !important;
     right: 5% !important;
 }
 
-.swiper-button-prev {
+#testimonials .swiper-button-prev {
     left: 85% !important;
 }
 #testimonials{
@@ -4006,4 +4006,196 @@ h3.accordion-header {
 .footer .footer-legal .social-links a:hover {
     background: var(--color-primary);
     text-decoration: none;
+}
+/*--------------------------------------------------------------
+# Report
+--------------------------------------------------------------*/
+    
+.report-lists #myTabReport .rpl {
+    width: 18%;
+    text-align: center;
+}
+
+.m-4.report-wrap {
+    position: relative;
+}
+
+a:-webkit-any-link:focus-visible {
+    outline-offset: 0;
+}
+
+#myTabReport .rpl .nav-link {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #444444;
+}
+
+#myTabReport .rpl .nav-link:hover {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#myTabReport .rpl .nav-link.active {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom: 3px solid #1D194C;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.form-search-report {
+    position: absolute;
+    right: -10%;
+    top: -5px;
+    display: flex;
+}
+
+.form-search-report form {
+    display: flex;
+}
+
+.form-search-report form img {
+    position: absolute;
+    left: 6px;
+    top: 17px;
+}
+
+input#search-report {
+    text-indent: 20px;
+    position: relative;
+    background: #F4F4F6;
+    border-radius: 10px;
+}
+
+.form-search-report label {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url('assets/img/icons/calendar.svg') no-repeat;
+    position: relative;
+    top: 10px;
+    left: 19px;
+    padding: 5px;
+}
+
+.form-search-report .custom-hidden {
+    margin-top: -1em;
+    opacity: 0;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    color: transparent;
+    background: transparent;
+}
+
+.report-item .row {
+    border: 1px solid #6D6E76;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.rp-item-left h3 {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #1D194C;
+}
+
+.rp-item-left p {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+    color: #444444;
+}
+
+.rp-item-right .time-news {
+    font-weight: bold;
+}
+
+.rp-paginate .pagination .active a {
+    color: #143361;
+    background-color: transparent;
+    font-weight: 600;
+}
+
+.rp-paginate .pagination .active a:hover {
+    background-color: transparent;
+    color: #143361;
+    border: 0px;
+}
+
+.rp-paginate .pagination .active a:focus {
+    background-color: transparent;
+    color: #143361;
+    outline: none;
+}
+
+.rp-paginate .pagination li a {
+    border: 1px;
+    margin-left: 0px;
+    color: #707070;
+    padding: 7px 2px;
+    margin: 0px 20px;
+}
+
+.rp-paginate .pagination li a:hover {
+    background-color: transparent;
+    color: #4A90E2;
+    padding-bottom: 2px;
+    border-bottom: 1px solid;
+    padding: 1px;
+    margin: 5px 25px;
+}
+
+.rp-paginate .pagination li a:focus {
+    outline: none;
+    background-color: transparent;
+}
+
+.rp-paginate .pagination li:first-child a,
+.rp-paginate .pagination li:last-child a {
+    border: 2px solid #143361 !important;
+    border-radius: 6px;
+    margin: 0px;
+    padding: 6px 12px;
+    border: 2px solid;
+    font-size: 14px;
+    color: #143361;
+}
+
+.rp-paginate .pagination li:first-child a:hover,
+.rp-paginate .pagination li:last-child a:hover {
+    text-decoration: none !important;
+    color: #fff;
+    background-color: #143361;
+}
+
+.rp-paginate .pagination li:first-child a:focus,
+.rp-paginate .pagination li:last-child a:focus {
+    outline: none;
+}
+
+.rp-paginate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
 }

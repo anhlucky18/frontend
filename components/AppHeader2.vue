@@ -21,7 +21,7 @@
                               Ủy thác đầu tư
                               </NuxtLink>
                             </li>
-                            <li><a href="#">Báo cáo và tư vấn</a></li>
+                            <li><a href="/bao-cao-tu-van">Báo cáo và tư vấn</a></li>
                         </ul>
                     </li>
           <li class="dropdown"><a href="#" class="ami-nav-menu"><span>Về chúng tôi </span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
