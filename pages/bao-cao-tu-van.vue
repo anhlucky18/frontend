@@ -437,27 +437,6 @@ const url = appConfig.http;
             </div>
         </section>
 
-        <!-- ======= Growing Enterprises Section ======= -->
-        <section class="grow-enterprises" id="grow-enterprises">
-            <div class="container" data-aos="fade-up ">
-                <div class="row ">
-                    <div class="col-12 col-lg-8 ge-content-left d-flex flex-grow-1 justify-content-center align-items-center ">
-                        <div style="display: block; ">
-                            <h2>
-                                The Global Cloud Contact Center & PBX for Growing Enterprises
-                            </h2>
-                            <a href="#"><button>Trò chuyện miễn phí</button></a>
-                        </div>
-
-                    </div>
-                    <div class="col-12 col-lg-4 ge-image-left ">
-                        <img src="assets/img/Group 2022.png " alt=" ">
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <!-- ======= End Growing Enterprises Section ======= -->
 
     </main>
 </template>
