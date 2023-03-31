@@ -25,6 +25,10 @@ const runtimeConfig = useRuntimeConfig();
 var blogposts=null;
 const appConfig = useAppConfig()
 const url = appConfig.http;
+
+import { register } from 'swiper/element/bundle';
+// register Swiper custom elements
+register();
 </script>
 
 <template>
@@ -161,28 +165,24 @@ const url = appConfig.http;
                 <div id="openModal" class="modalDialog">
                     <div >
                         <a href="#close" title="Close" class="close hww-btn-close">X</a>
-                        <div class="swiper-container">
-                            <!-- Additional required wrapper -->
-                            <div class="swiper-wrapper">
-                                <!-- Slides -->
-                                <div class="swiper-slide">
-                                    <img :src="`_nuxt/assets/img/qtnt.png`" alt="">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img :src="`_nuxt/assets/img/qtut.png`" alt="">
-                                </div>
-
-                            </div>
-                            <!-- If we need pagination -->
-                            <div class="swiper-pagination"></div>
-
-                            <!-- If we need navigation buttons -->
-                            <div class="swiper-button-prev hww-prev"></div>
-                            <div class="swiper-button-next hww-next"></div>
-
-                            <!-- If we need scrollbar -->
-                            <div class="swiper-scrollbar"></div>
-                        </div>
+                        <swiper-container
+                            :slides-per-view="1"
+                            :space-between="spaceBetween"
+                            :centered-slides="true"
+                            :pagination="{
+                            clickable: true
+                            }"
+                            @progress="onProgress"
+                            @slidechange="onSlideChange"
+                        >
+                            <swiper-slide>
+                                <img :src="`_nuxt/assets/img/qtnt.png`" alt="">
+                            </swiper-slide>
+                            <swiper-slide>
+                                <img :src="`_nuxt/assets/img/qtut.png`" alt="">
+                            </swiper-slide>
+                        </swiper-container>
+                        
                     </div>
                     <a href="#close" title="Close" class="close" id="close">x</a>
                 </div>
