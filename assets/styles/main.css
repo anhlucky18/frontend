@@ -178,6 +178,7 @@ section {
 }
 
 #header-other .navbar a,
+#header-other .navbar a:focus,
 #header-other .logo h1 {
     color: #303A42;
 }
@@ -607,6 +608,7 @@ main#services {
     overflow: hidden;
 }
 
+#faq-banner,
 #report-consult-banner,
 #sv-banner {
     padding: 20px 0 0 0;
@@ -625,6 +627,7 @@ main#services {
     padding: 10% 0;
 }
 
+#faq-banner::before,
 #report-consult-banner::before,
 #sv-banner::before {
     content: "";
@@ -637,6 +640,7 @@ main#services {
     height: 100%;
 }
 
+#faq-banner::after,
 #report-consult-banner::after,
 #sv-banner::after {
     content: "";
@@ -651,6 +655,7 @@ main#services {
     display: block;
 }
 
+#faq-banner h1,
 #report-consult-banner h1,
 #ami-banner h1,
 #sv-banner h1 {
@@ -662,6 +667,7 @@ main#services {
     color: #FFFFFF;
 }
 
+#faq-banner p,
 #report-consult-banner p,
 #sv-banner p,
 #ami-banner p {
@@ -746,6 +752,7 @@ span.banner-content-block {
     color: #1D194C;
 }
 
+#faq-banner,
 #report-consult-banner,
 #sv-banner {
     background: #1D194C;
@@ -2462,6 +2469,20 @@ a.close.hww-btn-close {
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
     background-color: var(--color-white);
     opacity: 1;
+}
+
+.report-consolt-slider .col-12 {
+    width: 95%;
+}
+
+.report-consolt-slider .swiper-slide {
+    margin: 0 5px;
+}
+
+.report-consolt-slider .swiper-slide img {
+    width: 10%;
+    height: 40%;
+    object-fit: cover;
 }
 
 @media (min-width: 992px) {
@@ -4198,4 +4219,431 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     justify-content: center;
     align-items: center;
     padding-top: 50px;
+}
+    
+#rp-head-modal {
+    border-bottom: none;
+}
+
+#rp-body-modal>h4 {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    /* identical to box height */
+    text-align: center;
+    /* Blue */
+    color: #153060;
+}
+
+#rp-body-modal>p {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    /* Ami Invest 04 */
+    color: #444444;
+}
+
+#send-report label {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+    /* Blue */
+    color: #153060;
+}
+
+#send-report input {
+    background: #FAFAFA;
+    /* line */
+    border: 1px solid #EAEAEA;
+    border-radius: 5px;
+    padding: 20px 20px;
+}
+
+#rp-body-modal>h4,
+#rp-body-modal>p {
+    text-align: center;
+}
+
+#send-report button {
+    text-align: center;
+    padding: 20px 90px;
+    width: 100%;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 37px;
+    color: #FFFFFF;
+}
+
+#faq-banner {
+    text-align: center;
+    padding: 100px 0px;
+}
+
+#faq-banner h1 {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+
+#faq-banner p {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#faq-banner form {
+    position: relative;
+}
+
+#faq-banner input {
+    width: 100%;
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 0.73544px 1.47088px rgba(16, 24, 40, 0.05);
+    border-radius: 5.88352px;
+    text-indent: 20px;
+    /* position: relative; */
+}
+
+#faq-banner img {
+    position: absolute;
+    left: 14px;
+    top: 26px;
+    width: 15px;
+}
+
+#contact-ami {
+    position: relative;
+}
+
+#contact-ami .info-company {
+    text-align: left;
+}
+
+#contact-ami .info-company .row h3 {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    text-align: center;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+#contact-ami .info-company .row p {
+    ont-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+    text-align: center;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+#contact-form {
+    background: #1D194C;
+    height: 600px;
+    margin: 200px 0px;
+    /* position: relative; */
+}
+
+#contact-form .container {
+    position: absolute;
+    right: 30%;
+    left: 13%;
+}
+
+#contact-form .info-company .row {
+    margin: 15% 0;
+}
+
+#contact-form .form-lien-he {
+    background: #FFFFFF;
+    height: 812px;
+    position: absolute;
+    right: 0;
+    bottom: -30%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
+    z-index: 10;
+    padding: 5% 5%;
+}
+
+#form-custom-lien-he input {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #E0E0E0;
+}
+
+#form-custom-lien-he input:focus {
+    border-color: green;
+    outline: 1px dotted #000
+}
+
+.btn-custom-lien-he {
+    background: #F9C729;
+    border-radius: 10px;
+    padding: 16px 40px;
+    gap: 8px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1D194C;
+}
+/* about-us */
+
+.about-us-banner .title-head-left h1 {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 72px;
+    text-align: justify;
+}
+
+.about-us-banner .short-desc-left p {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.about-us-banner,
+.about-img-banner {
+    margin-top: 50px;
+}
+
+.ami-history #solution-block li a {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #444444;
+    padding: 15px 0px;
+    background: #FFFFFF;
+    /* đổ bóng */
+    box-shadow: 0px 4px 8px #EFEFEF;
+    border-radius: 20px;
+}
+
+.ami-history .nav-pills .nav-link.active,
+.ami-history .nav-pills .show>.nav-link {
+    box-shadow: 0px 4px 8px #efefef;
+    border-radius: 20px;
+    color: #0FDBAD !important;
+}
+
+.ami-history .nav-fill .nav-item .nav-link,
+.ami-history .nav-justified .nav-item .nav-link {
+    width: 95%;
+}
+
+.about-element p {
+    padding: 0 10%;
+    text-align: justify;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #444444;
+}
+
+.devide-line {
+    border: 1px solid #303A42;
+}
+
+.leadership-item #name-cname h3 {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #1896CF;
+}
+
+.leadership-item #name-cname p {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #444444;
+}
+
+.leadership-item img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.leadership-item .middle-img {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+}
+
+.leadership-item {
+    position: relative;
+}
+
+.leadership-item:hover .item-overlay-image {
+    background: rgba(29, 25, 76, 0.62);
+}
+
+.leadership-item:hover img {
+    opacity: 0.3;
+}
+
+.leadership-item:hover .middle-img {
+    opacity: 1;
+}
+
+.leadership-item .text-overlay {
+    /* background: rgba(29, 25, 76, 0.62); */
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+    color: #FDFDFF;
+    object-fit: contain;
+}
+
+#about-vhdn {
+    padding: 50px 0px;
+    background: #1D194C;
+    color: #FFFFFF;
+    text-align: center;
+    position: relative;
+    z-index: 4;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#about-vhdn h2 {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    /* identical to box height */
+    color: #FFFFFF !important;
+}
+
+#about-vhdn p.text-top {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+}
+
+#img-top-vhdn {
+    margin-bottom: -30px;
+    position: relative;
+    z-index: 3;
+}
+
+.amirose-value ul,
+.amirose ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+}
+
+.amirose li {
+    background: #EBF1F7;
+    width: 8%;
+    border-radius: 10px;
+}
+
+.amirose-value li {
+    width: 8%;
+    vertical-align: top;
+    text-align: center;
+}
+
+.amirose-value p {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    /* Ami invest 06 */
+    color: #FFFFFF;
+}
+
+.amirose-value .gr-title {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    /* Ami invest 06 */
+    color: #0FDBAD;
+}
+
+.amirose h1 {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 154.5%;
+    /* identical to box height, or 99px */
+    /* Ami invest 02 */
+    color: #1896CF;
+}
+
+/*  Blog  */
+.blog-newest h2,
+.blog-most-view h2{
+font-family: 'Barlow';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 58px;
+
+/* Ami invest 01 */
+color: #1D194C;
 }

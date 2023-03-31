@@ -26,9 +26,9 @@
                     </li>
           <li class="dropdown"><a href="#" class="ami-nav-menu"><span>Về chúng tôi </span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                         <ul>
-                            <li><a href="#">Về Ami Invest</a></li>
-                            <li><a href="#">Liên hệ</a></li>
-                            <li><a href="#">FAQ</a></li>
+                            <li><a href="/about-us">Về Ami Invest</a></li>
+                            <li><a href="/contact-us">Liên hệ</a></li>
+                            <li><a href="/faq">FAQ</a></li>
                         </ul>
                     </li>
           <li><a href="#">Blog</a></li>
