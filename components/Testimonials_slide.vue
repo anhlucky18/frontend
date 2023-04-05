@@ -4,22 +4,24 @@
 
                 <div class="testimonials-slider swiper swiper-container">
 
-                    <img src='assets/img/icons/prev.svg' alt="" class="swiper-button-prev">
+                    <img src='assets/img/icons/sw-prev.svg' alt="" class="swiper-button-prev">
                     <img src='assets/img/icons/next.svg' alt="" class="swiper-button-next">
                     <div class="swiper-wrapper">
 
                         <div class="swiper-slide ">
                             <div class="testimonial-item row">
-                                <div class="col-3 ttm-right-img">
+                                <div class="col-12 col-lg-3 ttm-right-img">
                                     <img src="assets/img/testimonials/testimonials1.png " class="testimonial-img " alt=" ">
+                                    <h3 class="d-lg-none d-flex mt-4">Chị Mỹ Anh</h3>
+                                    <h4 class="d-lg-none d-flex">Công ty TNHH INNSA</h4>
                                 </div>
-                                <div class="col-9 ttm-text-left">
+                                <div class="col-12 col-lg-9 ttm-text-left">
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
                                         ea commodo consequat.
                                     </p>
-                                    <h3>Chị Mỹ Anh</h3>
-                                    <h4>Công ty TNHH INNSA</h4>
+                                    <h3 class="d-lg-flex d-none">Chị Mỹ Anh</h3>
+                                    <h4 class="d-lg-flex d-none">Công ty TNHH INNSA</h4>
                                 </div>
 
 
@@ -29,16 +31,18 @@
 
                         <div class="swiper-slide ">
                             <div class="testimonial-item row">
-                                <div class="col-3 ttm-right-img">
+                                <div class="col-12 col-lg-3 ttm-right-img">
                                     <img src="assets/img/testimonials/testimonials1.png " class="testimonial-img " alt=" ">
+                                    <h3 class="d-lg-none d-flex mt-4">Chị Mỹ Anh</h3>
+                                    <h4 class="d-lg-none d-flex">Công ty TNHH INNSA</h4>
                                 </div>
-                                <div class="col-9 ttm-text-left">
+                                <div class="col-12 col-lg-9 ttm-text-left">
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
                                         ea commodo consequat.
                                     </p>
-                                    <h3>Chị Mỹ Anh</h3>
-                                    <h4>Công ty TNHH INNSA</h4>
+                                    <h3 class="d-lg-flex d-none">Chị Mỹ Anh</h3>
+                                    <h4 class="d-lg-flex d-none">Công ty TNHH INNSA</h4>
                                 </div>
 
 
@@ -48,16 +52,18 @@
 
                         <div class="swiper-slide ">
                             <div class="testimonial-item row">
-                                <div class="col-3 ttm-right-img">
+                                <div class="col-12 col-lg-3 ttm-right-img">
                                     <img src="assets/img/testimonials/testimonials1.png " class="testimonial-img " alt=" ">
+                                    <h3 class="d-lg-none d-flex mt-4">Chị Mỹ Anh</h3>
+                                    <h4 class="d-lg-none d-flex">Công ty TNHH INNSA</h4>
                                 </div>
-                                <div class="col-9 ttm-text-left">
+                                <div class="col-12 col-lg-9 ttm-text-left">
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
                                         ea commodo consequat.
                                     </p>
-                                    <h3>Chị Mỹ Anh</h3>
-                                    <h4>Công ty TNHH INNSA</h4>
+                                    <h3 class="d-lg-flex d-none">Chị Mỹ Anh</h3>
+                                    <h4 class="d-lg-flex d-none">Công ty TNHH INNSA</h4>
                                 </div>
 
 
@@ -67,16 +73,18 @@
 
                         <div class="swiper-slide ">
                             <div class="testimonial-item row">
-                                <div class="col-3 ttm-right-img">
+                                <div class="col-12 col-lg-3 ttm-right-img">
                                     <img src="assets/img/testimonials/testimonials1.png " class="testimonial-img " alt=" ">
+                                    <h3 class="d-lg-none d-flex mt-4">Chị Mỹ Anh</h3>
+                                    <h4 class="d-lg-none d-flex">Công ty TNHH INNSA</h4>
                                 </div>
-                                <div class="col-9 ttm-text-left">
+                                <div class="col-12 col-lg-9 ttm-text-left">
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
                                         ea commodo consequat.
                                     </p>
-                                    <h3>Chị Mỹ Anh</h3>
-                                    <h4>Công ty TNHH INNSA</h4>
+                                    <h3 class="d-lg-flex d-none">Chị Mỹ Anh</h3>
+                                    <h4 class="d-lg-flex d-none">Công ty TNHH INNSA</h4>
                                 </div>
 
 
@@ -86,16 +94,18 @@
 
                         <div class="swiper-slide ">
                             <div class="testimonial-item row">
-                                <div class="col-3 ttm-right-img">
-                                    <img src="assets/img/testimonials/testimonials1.png" class="testimonial-img " alt=" ">
+                                <div class="col-12 col-lg-3 ttm-right-img">
+                                    <img src="assets/img/testimonials/testimonials1.png " class="testimonial-img " alt=" ">
+                                    <h3 class="d-lg-none d-flex mt-4">Chị Mỹ Anh</h3>
+                                    <h4 class="d-lg-none d-flex">Công ty TNHH INNSA</h4>
                                 </div>
-                                <div class="col-9 ttm-text-left">
+                                <div class="col-12 col-lg-9 ttm-text-left">
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
                                         ea commodo consequat.
                                     </p>
-                                    <h3>Chị Mỹ Anh</h3>
-                                    <h4>Công ty TNHH INNSA</h4>
+                                    <h3 class="d-lg-flex d-none">Chị Mỹ Anh</h3>
+                                    <h4 class="d-lg-flex d-none">Công ty TNHH INNSA</h4>
                                 </div>
 
 

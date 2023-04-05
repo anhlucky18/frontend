@@ -9,12 +9,12 @@
         <!-- //chart -->
         
         <div class="row">
-          <div class="col-12 col-md-7 wc-img-left">
+          <div class="col-12 col-lg-7 wc-img-left">
             <client-only>
                 <Chart_VNindex/>
             </client-only>
           </div>
-          <div class="col-12 col-md-5 wc-content-right">
+          <div class="col-12 col-lg-5 wc-content-right">
             <div class="row">
               <div class="col-6 wc-ct-top">
                 <img :src="`_nuxt/assets/img/icons/Group1.svg`" alt="" class="mb-2" />

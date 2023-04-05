@@ -290,7 +290,7 @@ useHead({
     <section id="investment-performance" class="investment-performance">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-5" id="ip-left-content">
+          <div class="col-12 col-lg-5" id="ip-left-content">
             <h2 class="ip-title-heading">Hiệu suất đầu tư</h2>
             <p class="ip-item-text my-5">
               Lợi suất hoạt động ủy thác đầu tư từ tháng 07/2021 từng đạt 27%
@@ -307,7 +307,7 @@ useHead({
               hoạt động tự doanh <span class="orange-text">đạt 40%</span>
             </h4>
           </div>
-          <div class="col-12 col-md-7 pe-0" id="ip-right-image">
+          <div class="col-12 col-lg-7 pe-0" id="ip-right-image">
             <img :src="`_nuxt/assets/img/banner/Group 2041.png`" alt="" />
           </div>
         </div>
