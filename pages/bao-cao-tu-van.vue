@@ -271,7 +271,7 @@ const url = appConfig.http;
                     <div class="tab-content">
                         <div class="tab-pane fade show active report-item" id="industry-report">
                             <div class="row">
-                                <div class="col-10 rp-item-left">
+                                <div class="col-12 col-md-10 rp-item-left">
                                     <h3>Biến động tỷ giá hối đoái và tác động đến các doanh nghiệp niêm yết</h3>
                                     <p class="mt-4">
                                         Áp lực lên tỷ giá USD/VND tăng mạnh trong tháng 10/2022 và Ngân hàng Nhà nước ( NHNN) liên tục có những biện pháp điều hành để ổn định thị trường ngoại hối. Vào ngày 17/10, NHNN đã thông báo quyết định điều chỉnh biên độ tỷ giá giao ngay USD/VND từ mức
@@ -280,14 +280,14 @@ const url = appConfig.http;
                                         tầm kiểm soát. Xem thêm >
                                     </p>
                                 </div>
-                                <div class="col-2 rp-item-right">
+                                <div class="col-12 col-md-2 rp-item-right">
                                     <p class="time-news">30/12/2022</p>
                                     <a href="" class="new-dl"> <img src="assets/img/icons/dl-a-lot.svg" alt=""> Tải xuống</a>
                                 </div>
                             </div>
 
                             <div class="row">
-                                <div class="col-10 rp-item-left">
+                                <div class="col-12 col-md-10 rp-item-left">
                                     <h3>Biến động tỷ giá hối đoái và tác động đến các doanh nghiệp niêm yết</h3>
                                     <p class="mt-4">
                                         Áp lực lên tỷ giá USD/VND tăng mạnh trong tháng 10/2022 và Ngân hàng Nhà nước ( NHNN) liên tục có những biện pháp điều hành để ổn định thị trường ngoại hối. Vào ngày 17/10, NHNN đã thông báo quyết định điều chỉnh biên độ tỷ giá giao ngay USD/VND từ mức
@@ -296,13 +296,13 @@ const url = appConfig.http;
                                         tầm kiểm soát. Xem thêm >
                                     </p>
                                 </div>
-                                <div class="col-2 rp-item-right">
+                                <div class="col-12 col-md-2 rp-item-right">
                                     <p class="time-news">29/12/2022</p>
                                     <a href="" class="new-dl"> <img src="assets/img/icons/dl-a-lot.svg" alt=""> Tải xuống</a>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-10 rp-item-left">
+                                <div class="col-12 col-md-10 rp-item-left">
                                     <h3>Biến động tỷ giá hối đoái và tác động đến các doanh nghiệp niêm yết</h3>
                                     <p class="mt-4">
                                         Áp lực lên tỷ giá USD/VND tăng mạnh trong tháng 10/2022 và Ngân hàng Nhà nước ( NHNN) liên tục có những biện pháp điều hành để ổn định thị trường ngoại hối. Vào ngày 17/10, NHNN đã thông báo quyết định điều chỉnh biên độ tỷ giá giao ngay USD/VND từ mức
@@ -311,13 +311,13 @@ const url = appConfig.http;
                                         tầm kiểm soát. Xem thêm >
                                     </p>
                                 </div>
-                                <div class="col-2 rp-item-right">
+                                <div class="col-12 col-md-2 rp-item-right">
                                     <p class="time-news">28/12/2022</p>
                                     <a href="" class="new-dl"> <img src="assets/img/icons/dl-a-lot.svg" alt=""> Tải xuống</a>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-10 rp-item-left">
+                                <div class="col-12 col-md-10 rp-item-left">
                                     <h3>Biến động tỷ giá hối đoái và tác động đến các doanh nghiệp niêm yết</h3>
                                     <p class="mt-4">
                                         Áp lực lên tỷ giá USD/VND tăng mạnh trong tháng 10/2022 và Ngân hàng Nhà nước ( NHNN) liên tục có những biện pháp điều hành để ổn định thị trường ngoại hối. Vào ngày 17/10, NHNN đã thông báo quyết định điều chỉnh biên độ tỷ giá giao ngay USD/VND từ mức
@@ -326,13 +326,13 @@ const url = appConfig.http;
                                         tầm kiểm soát. Xem thêm >
                                     </p>
                                 </div>
-                                <div class="col-2 rp-item-right">
+                                <div class="col-12 col-md-2 rp-item-right">
                                     <p class="time-news">27/12/2022</p>
                                     <a href="" class="new-dl"> <img src="assets/img/icons/dl-a-lot.svg" alt=""> Tải xuống</a>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-10 rp-item-left">
+                                <div class="col-12 col-md-10 rp-item-left">
                                     <h3>Biến động tỷ giá hối đoái và tác động đến các doanh nghiệp niêm yết</h3>
                                     <p class="mt-4">
                                         Áp lực lên tỷ giá USD/VND tăng mạnh trong tháng 10/2022 và Ngân hàng Nhà nước ( NHNN) liên tục có những biện pháp điều hành để ổn định thị trường ngoại hối. Vào ngày 17/10, NHNN đã thông báo quyết định điều chỉnh biên độ tỷ giá giao ngay USD/VND từ mức
@@ -341,7 +341,7 @@ const url = appConfig.http;
                                         tầm kiểm soát. Xem thêm >
                                     </p>
                                 </div>
-                                <div class="col-2 rp-item-right">
+                                <div class="col-12 col-md-2 rp-item-right">
                                     <p class="time-news">26/12/2022</p>
                                     <a href="" class="new-dl"> <img src="assets/img/icons/dl-a-lot.svg" alt=""> Tải xuống</a>
                                 </div>

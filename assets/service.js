@@ -1,5 +1,4 @@
-
-const mySwiper =new Swiper('.swiper-container', {
+const mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
     // loop: true,
@@ -15,5 +14,5 @@ const mySwiper =new Swiper('.swiper-container', {
         prevEl: '.swiper-button-prev',
     },
 
-    
+
 })
