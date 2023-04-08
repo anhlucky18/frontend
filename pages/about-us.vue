@@ -36,7 +36,7 @@ const url = appConfig.http;
                 <div class="row d-flex justify-content-between align-items-end">
                     <div class="col-12 col-lg-8 title-head-left">
                         <h1>
-                            <span style="color:#F9C729">Ami&M</span> was born to bring <br> better life for Companions
+                            <span style="color:#F9C729">Ami&M</span> was born to bring <br class="d-none d-md-flex"> better life for Companions
                         </h1>
                     </div>
                     <div class="col-12 col-lg-4 short-desc-left">
@@ -148,7 +148,7 @@ const url = appConfig.http;
                     </div>
                     <div class="col-12 col-lg-9 info-leadership">
                         <div class="row d-flex justify-content-between">
-                            <div class="col-6 leadership-item">
+                            <div class="col-12 col-sm-6 leadership-item">
                                 <div class="item-overlay-image">
                                     <img src="assets/img/team/buimanhlinh.png" alt="">
                                 </div>
@@ -164,7 +164,7 @@ const url = appConfig.http;
                                     <p>Chủ tịch HĐQT Ami Invest</p>
                                 </div>
                             </div>
-                            <div class="col-6 leadership-item">
+                            <div class="col-12 col-sm-6 leadership-item">
                                 <div class="item-overlay-image"><img src="assets/img/team/dotiendung-mba.png" alt=""></div>
 
                                 <div class="middle-img">
@@ -180,7 +180,7 @@ const url = appConfig.http;
                             </div>
                         </div>
                         <div class="row d-flex justify-content-between mt-5">
-                            <div class="col-6 leadership-item">
+                            <div class="col-12 col-sm-6 leadership-item">
                                 <div class="item-overlay-image"><img src="assets/img/team/trinhminhkhanh-msc.png" alt=" "></div>
 
                                 <div class="middle-img">
@@ -194,7 +194,7 @@ const url = appConfig.http;
                                     <p>TBP Phân tích và nghiên cứu</p>
                                 </div>
                             </div>
-                            <div class="col-6 leadership-item ">
+                            <div class="col-12 col-sm-6 leadership-item ">
                                 <div class="item-overlay-image"><img src="assets/img/team/phamngocchuong.png " alt=" "></div>
 
                                 <div class="middle-img">
